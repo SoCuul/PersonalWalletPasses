@@ -5,16 +5,16 @@
 
 ---
 
-## Prerequisites
+# Prerequisites
 - [Node.JS](https://nodejs.org/en/download)
 - [yarn](https://yarnpkg.com/getting-started/install)
 
-## Functionality
+# Functionality
 - Generate PKPass Bundles (Apple Wallet Passes) from a JSON template
 - Add images with ease from local file paths
 - Speeds up your pass-creation workflow by a significant amount
 
-## Installation
+# Installation
 #### Local
 ```sh
 $ git clone https://github.com/socuul/personalwalletpasses.git
@@ -31,7 +31,7 @@ $ yarn cli:install
 $ pwp <args>
 ```
 
-## Setup
+# Setup
 
 First install the required modules with `yarn install`
 
@@ -92,5 +92,5 @@ Inside the `model` object, insert your pass file information. To learn more abou
 
 Optionally, you can add `true` as an argument after the template path to open the created pass bundle after the program is finished.
 
-## Support
+# Support
 This program is provided as-is, and support is not guaranteed.
