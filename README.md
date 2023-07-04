@@ -34,7 +34,6 @@ $ pwp <args>
 # Setup
 
 Create a folder structure that consists of the following:
-<a href="https://tree.nathanfriend.io/?s=(%27options!(%27fancy!true~fullPath!false~trailingSlash!true~rootDot!false)~7(%277%27606.json008ets*icon2logo2strip2thumbnail2background20certs*wwdc*-AppleWWDRCAG453*-3Cert5-3Key5-p8phrase.txt%27)~version!%271%27)*0--%20%200%5Cn-2.png*3signer5.pem*6p8data7source!8ass%018765320-*" hidden>View Folder Structure Diagram</a>
 
 ```
 passdata/
