@@ -14,6 +14,23 @@
 - Add images with ease from local file paths
 - Speeds up your pass-creation workflow by a significant amount
 
+## Installation
+#### Local
+```sh
+$ git clone https://github.com/socuul/personalwalletpasses.git
+$ cd personalwalletpasses
+$ yarn install
+$ node . <args>
+```
+#### Global
+```sh
+$ git clone https://github.com/socuul/personalwalletpasses.git
+$ cd personalwalletpasses
+$ yarn install
+$ yarn cli:install
+$ pwp <args>
+```
+
 ## Setup
 
 First install the required modules with `yarn install`

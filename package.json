@@ -8,10 +8,12 @@
     "build": "rm -rf ./dist && mkdir dist && tsc",
     "start": "tsc && node dist/index.js",
     "lint": "eslint src/",
-    "lint:fix": "eslint src/ --fix"
+    "lint:fix": "eslint src/ --fix",
+    "cli:install": "npm run build && yarn global add \"file:$PWD\"",
+    "cli:uninstall": "yarn global remove personalwalletpasses"
   },
   "bin": {
-    "pwp": "node ."
+    "pwp": "./dist/index.js"
   },
   "keywords": [
     "pkpass",

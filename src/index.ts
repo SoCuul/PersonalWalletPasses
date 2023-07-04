@@ -1,13 +1,10 @@
+#!/usr/bin/env node
 import chalk from 'chalk'
 import ora from 'ora'
 import { resolve as resolvePath } from 'path'
 import { exec } from 'child_process'
 import { readFileSync, writeFileSync } from 'fs'
 import { emptyDirSync } from 'fs-extra'
-
-// Require
-import { createRequire } from "module"
-const require = createRequire(import.meta.url)
 
 // PassKit
 import passkit from 'passkit-generator'
@@ -55,7 +52,7 @@ if (!configFilePath) {
 // Load requested config file
 let passConfig: PassFile
 try {
-    passConfig = require(configFilePath)
+    passConfig = JSON.parse(readFileSync(configFilePath, 'utf8'))
 }
 catch (error: any) {
     console.error(error)
