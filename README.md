@@ -20,6 +20,7 @@
 $ git clone https://github.com/socuul/personalwalletpasses.git
 $ cd personalwalletpasses
 $ yarn install
+$ yarn build
 $ node . <args>
 ```
 #### Global
