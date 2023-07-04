@@ -1,0 +1,37 @@
+{
+  "name": "personalwalletpasses",
+  "version": "0.0.1",
+  "description": "A simple utility to improve the workflow of creating PKPass files.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf ./dist && mkdir dist && tsc",
+    "start": "tsc && node dist/index.js",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix"
+  },
+  "bin": {
+    "pwp": "node ."
+  },
+  "keywords": [
+    "pkpass",
+    "apple wallet",
+    "wallet pass"
+  ],
+  "author": "SoCuul",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "@types/node": "^20.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "eslint": "^8.43.0",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "fs-extra": "^11.1.1",
+    "ora": "^6.3.1",
+    "passkit-generator": "^3.1.9"
+  }
+}
