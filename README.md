@@ -15,21 +15,12 @@
 - Speeds up your pass-creation workflow by a significant amount
 
 # Installation
-#### Local
 ```sh
 $ git clone https://github.com/socuul/personalwalletpasses.git
 $ cd personalwalletpasses
 $ yarn install
 $ yarn build
 $ node . <args>
-```
-#### Global
-```sh
-$ git clone https://github.com/socuul/personalwalletpasses.git
-$ cd personalwalletpasses
-$ yarn install
-$ yarn cli:install
-$ pwp <args>
 ```
 
 # Setup

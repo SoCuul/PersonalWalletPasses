@@ -1,19 +1,16 @@
 {
   "name": "personalwalletpasses",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple utility to improve the workflow of creating PKPass files.",
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
     "build": "rm -rf ./dist && mkdir dist && tsc",
     "start": "tsc && node dist/index.js",
-    "lint": "eslint src/",
-    "lint:fix": "eslint src/ --fix",
+    "lint": "eslint \"**/*.{ts,js}\"",
+    "lint:fix": "yarn lint --fix",
     "cli:install": "npm run build && yarn global add \"file:$PWD\"",
     "cli:uninstall": "yarn global remove personalwalletpasses"
-  },
-  "bin": {
-    "pwp": "./dist/index.js"
   },
   "keywords": [
     "pkpass",
