@@ -120,3 +120,5 @@ emptyDirSync('./src/template.pass')
 if (openAfterCompletion === 'true') {
     exec(`open ${passConfig.out}`)
 }
+
+process.exit(0)
