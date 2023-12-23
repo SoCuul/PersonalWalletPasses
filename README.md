@@ -6,8 +6,8 @@
 ---
 
 # Prerequisites
-- [Node.JS](https://nodejs.org/en/download)
-- [yarn](https://yarnpkg.com/getting-started/install)
+- [Node.js](https://nodejs.org/en/download)
+- [pnpm](https://yarnpkg.com/getting-started/install)
 
 # Functionality
 - Generate PKPass Bundles (Apple Wallet Passes) from a JSON template
@@ -18,8 +18,8 @@
 ```sh
 $ git clone https://github.com/socuul/personalwalletpasses.git
 $ cd personalwalletpasses
-$ yarn install
-$ yarn build
+$ pnpm install
+$ pnpm build
 $ node . <args>
 ```
 
@@ -32,7 +32,7 @@ passdata/
 ├── passdata.json
 ├── assets/
 │   ├── icon.png
-│   ├── logo.png
+│   ├── logo.png 
 │   ├── strip.png
 │   ├── thumbnail.png
 │   └── background.png
@@ -74,12 +74,12 @@ Create the `passdata.json` file from the template below:
 }
 ```
 
-Inside the `model` object, insert your pass file information. To learn more about the PassKit/PKPass format, feel free to visit the [official documentation](https://developer.apple.com/library/archive/documentation/UserExperience/Reference/PassKit_Bundle/Chapters/Introduction.html#//apple_ref/doc/uid/TP40012026-CH0-SW1) or the [newer (but more confusing) official documentation](https://developer.apple.com/documentation/passkit/pkpass).
+Inside the `model` object, insert your pass file information. To learn more about the PassKit/PKPass format, feel free to visit the [official documentation](https://developer.apple.com/documentation/walletpasses/creating_the_source_for_a_pass) or the [older, archived official documentation](https://web.archive.org/web/20230520035941mp_/https://developer.apple.com/library/archive/documentation/UserExperience/Reference/PassKit_Bundle/Chapters/Introduction.html).
 
 ## Generating a bundled pass archive
 `node . <template-file-path.json> [true]`
 
-Optionally, you can add `true` as an argument after the template path to open the created pass bundle after the program is finished.
+Optionally, you can add `true` as an argument after the template path, to open the created pass bundle after the program is finished (macOS only).
 
 # Support
 This program is provided as-is, and support is not guaranteed.
